@@ -1,6 +1,7 @@
 import React from 'react';
 import './LoginForm.css';
-import { FaUser,FaLock } from "react-icons/fa";
+import { FaUser, FaLock } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   return (
@@ -18,17 +19,20 @@ const LoginForm = () => {
 
             <div className="remember-forgot">
                 <label><input type='checkbox'/>Remember me</label>
-                <a href='#'>Forgot password?</a>
+                {/* Use Link instead of <a> for routing */}
+                <Link to='/forgot-password'>Forgot password?</Link>
             </div>
             <button type='submit'>Login</button>
 
             <div className="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <p>Don't have an account? 
+                    {/* Use Link instead of <a> for routing */}
+                    <Link to='/register'> Register</Link>
+                </p>
             </div>
         </form>
-
     </div>
-  )
+  );
 }
 
 export default LoginForm;

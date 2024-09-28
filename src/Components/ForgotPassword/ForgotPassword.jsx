@@ -1,13 +1,14 @@
 import React from 'react'
 import { FaUser } from "react-icons/fa";
+import styles from './ForgotPassword.module.css'
 const ForgotPassword = () => {
   return (
-    <div className='wrapper'>
+    <div className={styles['wrapper']}>
     <form action=''>
         <h1>Enter Your E-Mail</h1>
-        <div className="input-box">
+        <div className={styles["input-box"]}>
             <input type="text" placeholder='Username' required></input>
-            <FaUser className='icon' />
+            <FaUser className={styles['icon']} />
         </div>
         
         

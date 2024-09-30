@@ -1,11 +1,12 @@
 import './App.css';
 import React,{useState, useEffect} from 'react';
-import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
-import LoginForm from './Components/LoginForm/LoginForm';
-import Profile from './Components/Profile/Profile';
-import RegisterForm from './Components/RegisterForm/RegisterForm';
+import ForgotPassword from '../ForgotPassword/ForgotPassword';
+import LoginForm from '../LoginForm/LoginForm';
+import RegisterForm from '../RegisterForm/RegisterForm';
 import { Route, Routes,Navigate } from 'react-router-dom';
-import { auth } from './Components/Firebase/firebase';
+import { auth } from '../Firebase/firebase';
+import Profile from '../Profile/Profile';
+
 
 
 
